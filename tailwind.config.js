@@ -3,19 +3,26 @@ export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      // 👋 This object is empty ON PURPOSE.
-      //
-      // You're free to define your own design tokens here (colors, typography,
-      // spacing, radii, breakpoints…) if you want — it's OPTIONAL but we value it.
-      // You can also lay things out with direct values (arbitrary values) if you prefer.
-      //
-      // Example (delete it or adapt it):
-      // colors: { brand: '#121212', 'gray-97': '#F5F5F5' },
-      // fontFamily: { display: ['Bricolage Grotesque', 'sans-serif'], body: ['Manrope', 'sans-serif'] },
+      // Design tokens taken from the Figma / DESIGN.md.
+      colors: {
+        banner: '#F5F5F5', // banner background
+        ink: '#121212', // titles
+        muted: '#494B4D', // body copy
+        brand: '#00C266', // green quarter-circles & accents
+      },
+      fontFamily: {
+        display: ['"Bricolage Grotesque"', 'sans-serif'], // titles
+        body: ['Manrope', 'sans-serif'], // body copy
+      },
+      borderRadius: {
+        media: '20px', // image corners (per Figma)
+      },
     },
     screens: {
-      // The test's single responsive breakpoint. You can change it if you prefer.
-      laptop: '1024px',
+      // Single responsive band from the design: the "1024px" compact desktop.
+      // Desktop-first — base styles are the full desktop; `laptop:` compacts them
+      // (same row layout, smaller sizes) at 1279px and below. It never stacks.
+      laptop: { max: '1430px' },
     },
   },
   plugins: [],
