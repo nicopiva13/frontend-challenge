@@ -20,8 +20,8 @@ export default {
     },
     screens: {
       // Single responsive band from the design: the "1024px" compact desktop.
-      // Desktop-first — base styles are the full desktop; `laptop:` compacts them
-      // (same row layout, smaller sizes) at 1279px and below. It never stacks.
+      // Desktop-first — base styles are the full 1440 desktop; `laptop:` compacts
+      // them (same row layout, smaller sizes) at 1430px and below. It never stacks.
       laptop: { max: '1430px' },
     },
   },

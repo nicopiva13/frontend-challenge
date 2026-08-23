@@ -8,7 +8,7 @@ const hero = {
   title: 'Entiende\ntu organismo',
   description:
     'Descubre el fascinante funcionamiento de tu cuerpo y cómo cada sistema trabaja en perfecta armonía. Conocer tu biología es el primer paso para cuidar de tu salud de manera consciente y efectiva.',
-  image: '/assets/images/hero-photo.png',
+  image: '/assets/images/hero-photo.webp',
   imageAlt: 'Mujer practicando una rutina de bienestar',
   logo: '/assets/logos/health-logo.svg',
 }
